@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Richard Calderon — Biomedical Engineer</title>
-  <meta name="description" content="Biomedical engineer specializing in microfluidic device design, 3D medical modeling, CFD simulation, and prosthetic development.">
+  <title>Richard Calderón — Microfluidic Engineer | Medical 3D Modeling | CFD Simulation</title>
+  <meta name="description" content="Biomedical engineer specializing in microfluidic device design, CFD simulation (COMSOL, ANSYS), medical 3D modeling from CT/MRI, and 3D-printed prosthetics. Available for remote freelance projects.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
@@ -100,10 +100,12 @@
 
     /* CONTACT */
     .contact{background:var(--bg);border-top:1px solid var(--border);text-align:center;padding:80px 24px}
-    .contact p{color:var(--text-dim);max-width:480px;margin:0 auto 28px;font-size:15px;font-weight:300}
+    .contact p{color:var(--text-dim);max-width:480px;margin:0 auto 28px;font-size:15px;font-weight:300;line-height:1.7}
     .contact-links{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
     .contact-links a{color:var(--text-dim);font-size:13px;font-weight:400;padding:10px 20px;border:1px solid var(--border);border-radius:4px;transition:all .2s}
     .contact-links a:hover{border-color:var(--accent);color:var(--accent);text-decoration:none}
+    .deliverables{max-width:520px;margin:0 auto 32px;display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+    .deliverable-tag{font-size:11px;padding:5px 12px;border-radius:3px;background:rgba(79,195,247,.06);color:var(--text-dim);border:1px solid var(--border);font-weight:400}
 
     @media(max-width:768px){nav{padding:14px 20px}nav .nav-links{gap:14px}nav .nav-links a{font-size:11px}.hero-content{padding:0 24px 60px}.about-grid{grid-template-columns:1fr;gap:24px}.tl-item{grid-template-columns:1fr;gap:4px}.media-grid{grid-template-columns:1fr}.project-body{padding:20px 24px 24px}.press-item{flex-direction:column;align-items:flex-start;gap:4px}}
     .fade-in{opacity:0;transform:translateY(16px);transition:opacity .5s ease,transform .5s ease}.fade-in.visible{opacity:1;transform:translateY(0)}
@@ -111,7 +113,7 @@
 </head>
 <body>
   <nav>
-    <div class="logo">R.Calderon</div>
+    <div class="logo">R.Calderón</div>
     <div class="nav-links">
       <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#media">Media</a><a href="#contact">Contact</a>
     </div>
@@ -135,9 +137,9 @@
         <div class="about-img"><img src="images/chip-hero.jpg" alt="PDMS microfluidic chip"></div>
         <div class="about-text">
           <div class="section-label">About</div>
-          <h2 class="section-title">Richard Calderon</h2>
+          <h2 class="section-title">Richard Calderón</h2>
           <p>Biomedical engineer from Lima, Perú. Currently pursuing my M.Sc. at <strong>UTEC</strong>, where I manage the Microfluidics & BioMEMS Laboratory (L503). My work sits at the intersection of engineering and biology — designing microfluidic devices, running CFD simulations, and fabricating functional prototypes.</p>
-          <p>Completed a <strong>4-month research internship at the Lerner Research Institute, Cleveland Clinic</strong> (Biomedical Engineering), developing microfluidic devices for inertial CTC separation.</p>
+          <p>Completed a <strong>3-month research internship at the Lerner Research Institute, Cleveland Clinic</strong> (Biomedical Engineering), developing microfluidic devices for inertial CTC separation.</p>
           <p>Co-founded <strong>DogMotion Studio</strong>, Perú's first 3D-printed personalized canine prosthetics startup — a project that went viral with millions of views across national and international media.</p>
         </div>
       </div>
@@ -162,17 +164,15 @@
       <div class="section-label">Work</div>
       <h2 class="section-title">Selected Projects</h2>
 
+      <!-- DOGMOTION: Reduced from 9 to 6 slides (removed texture, wireframe, scale model) -->
       <div class="project-card fade-in">
         <div class="gallery-container" id="dogmotion-gallery" style="height:420px"><div class="gallery-track" id="dogmotion-track">
           <div class="gallery-slide" style="height:420px"><img src="images/dogmotion-grau-walking.jpg" alt="Grau walking" style="object-fit:cover"><div class="slide-label">Grau — Walking outdoors with custom 3D-printed prosthetic</div></div>
           <div class="gallery-slide" style="height:420px"><img src="images/dogmotion-team-utec.jpg" alt="Team" style="object-fit:cover"><div class="slide-label">DogMotion Studio team with Grau at UTEC</div></div>
-          <div class="gallery-slide" style="height:420px"><img src="images/dogmotion-cad-sativa.png" alt="CAD" style="object-fit:contain;background:#111"><div class="slide-label">CAD design — Socket + blade over 3D scan</div></div>
-          <div class="gallery-slide" style="height:420px"><img src="images/dogmotion-sativa-side.jpg" alt="Sativa" style="object-fit:cover"><div class="slide-label">Sativa — Red socket prosthetic</div></div>
+          <div class="gallery-slide" style="height:420px"><img src="images/dogmotion-cad-sativa.png" alt="CAD" style="object-fit:contain;background:#111"><div class="slide-label">CAD design — Socket + blade over 3D-scanned anatomy</div></div>
+          <div class="gallery-slide" style="height:420px"><img src="images/dogmotion-sativa-side.jpg" alt="Sativa" style="object-fit:cover"><div class="slide-label">Sativa — Red socket prosthetic, articulated blade</div></div>
           <div class="gallery-slide" style="height:420px"><img src="images/dogmotion-jack-prosthetic.jpg" alt="Jack" style="object-fit:cover"><div class="slide-label">Jack — First patient, blue TPU prosthetic</div></div>
-          <div class="gallery-slide" style="height:420px"><img src="images/dogmotion-socket-detail.png" alt="Socket" style="object-fit:contain;background:#111"><div class="slide-label">Ventilated socket design detail</div></div>
-          <div class="gallery-slide" style="height:420px"><img src="images/dogmotion-socket-texture.png" alt="Texture" style="object-fit:contain;background:#111"><div class="slide-label">Engraved texture pattern on socket</div></div>
-          <div class="gallery-slide" style="height:420px"><img src="images/dogmotion-blender-wireframe.png" alt="Wireframe" style="object-fit:contain;background:#111"><div class="slide-label">Blender wireframe for biomechanical analysis</div></div>
-          <div class="gallery-slide" style="height:420px"><img src="images/dogmotion-scale-model.jpg" alt="Scale" style="object-fit:cover"><div class="slide-label">3D-printed scale model for fit verification</div></div>
+          <div class="gallery-slide" style="height:420px"><img src="images/dogmotion-socket-detail.png" alt="Socket" style="object-fit:contain;background:#111"><div class="slide-label">Ventilated socket — Anatomical contour & harness mounts</div></div>
         </div><button class="gallery-nav gallery-prev" onclick="moveSlide('dogmotion',-1)">‹</button><button class="gallery-nav gallery-next" onclick="moveSlide('dogmotion',1)">›</button><div class="gallery-dots" id="dogmotion-dots"></div></div>
         <div class="project-body">
           <div class="project-type">Startup · Prosthetics · 3D Printing</div>
@@ -244,7 +244,7 @@
           <p class="project-desc">CT-based study of mandibular fracture and fibula free flap reconstruction. 3D Slicer segmentation, Meshmixer refinement, Rhinoceros 7 modeling, ANSYS FEA with physiological muscle loading. Compared von Mises across normal, fractured, and PEEK-reconstructed conditions.</p>
           <div class="project-tags"><span class="tag">3D Slicer</span><span class="tag">ANSYS FEA</span><span class="tag">Rhinoceros 7</span><span class="tag">Blender</span><span class="tag">PEEK</span></div>
           <div class="project-metrics"><div class="metric"><strong>63.2 MPa</strong> normal</div><div class="metric"><strong>111 MPa</strong> reconstructed</div><div class="metric"><strong>1.26M</strong> nodes</div></div>
-          <div style="margin-top:16px"><a href="docs/mandible-biomechanical-study.pdf" target="_blank" class="btn btn-ghost" style="font-size:12px;padding:8px 16px">📄 View Full Study (PDF)</a></div>
+          <div style="margin-top:16px"><a href="docs/mandible-biomechanical-study.pdf" target="_blank" class="btn btn-ghost" style="font-size:12px;padding:8px 16px">📄 View Project Report (PDF)</a></div>
         </div>
       </div>
     </div>
@@ -287,7 +287,14 @@
     <div class="container">
       <div class="section-label">Contact</div>
       <h2 class="section-title">Let's Work Together</h2>
-      <p>Open for freelance projects in medical 3D modeling, microfluidic device design, CFD/FEA simulation, and prosthetic development.</p>
+      <p>Open for remote freelance projects in medical 3D modeling, microfluidic device design, CFD/FEA simulation, and prosthetic development.</p>
+      <div class="deliverables">
+        <span class="deliverable-tag">Microfluidic device CAD files</span>
+        <span class="deliverable-tag">COMSOL simulation reports</span>
+        <span class="deliverable-tag">STL-ready anatomical models</span>
+        <span class="deliverable-tag">FEA stress analysis</span>
+        <span class="deliverable-tag">3D-printable prosthetic designs</span>
+      </div>
       <div class="contact-links">
         <a href="mailto:rcalderon@utec.edu.pe">Email</a>
         <a href="https://www.linkedin.com/in/richard-calderon/" target="_blank">LinkedIn</a>
@@ -295,7 +302,7 @@
       </div>
     </div>
   </section>
-  <footer style="padding:24px;text-align:center;font-size:11px;color:var(--text-muted);border-top:1px solid var(--border)">© 2025 Richard Calderon</footer>
+  <footer style="padding:24px;text-align:center;font-size:11px;color:var(--text-muted);border-top:1px solid var(--border)">© 2026 Richard Calderón</footer>
 
   <!-- LIGHTBOX -->
   <div class="lightbox" id="lightbox">
@@ -347,7 +354,6 @@
     function goToSlide(id,i){galleries[id].current=i;updateGallery(id)}
     function updateGallery(id){const g=galleries[id];document.getElementById(id+'-track').style.transform=`translateX(-${g.current*100}%)`;document.querySelectorAll('#'+id+'-dots .gallery-dot').forEach((d,i)=>{d.className='gallery-dot'+(i===g.current?' active':'')})}
 
-    // Project data for lightbox info panel
     const projectInfo={
       dogmotion:{type:'Startup · Prosthetics · 3D Printing',title:'DogMotion Studio — 3D-Printed Canine Prosthetics',desc:"Co-founded Perú's first personalized canine prosthetics startup. Full scan-to-print pipeline: 3D scanning, CAD modeling (Fusion 360, Blender), FDM/SLA printing with ABS, PETG, TPU, and prosthetic silicone liners. Reduced fabrication from 5 months to 1 week.",tags:['Fusion 360','Blender','3D Scanning','FDM / SLA','TPU / PETG','Biomechanics'],metrics:['3 patients treated','20x cheaper than imports','8+ media features']},
       rbc:{type:'Microfluidics · Lab-on-a-Chip',title:'RBC Separation & Microencapsulation',desc:'Two integrated PDMS microfluidic devices. ErythroSep: inertial separation using serpentine CE channels. ErythroEncap: passive micromixer, flow-focusing droplet generator, on-chip CaCl₂ crosslinking.',tags:['PDMS Soft Lithography','COMSOL CFD','Droplet Generation','Fluorescence Microscopy'],metrics:['2 integrated chips','2% HTC input','~50 µm droplets']},
@@ -366,7 +372,6 @@
       }));
       lbData.current=index;
       lbData.galleryId=galleryId;
-      // Populate info panel
       const info=projectInfo[galleryId];
       if(info){
         document.getElementById('lb-info').innerHTML=
@@ -394,7 +399,6 @@
       if(e.key==='ArrowRight')lbNav(1);
       if(e.key==='ArrowLeft')lbNav(-1);
     });
-    // Click outside to close
     document.getElementById('lightbox').addEventListener('click',e=>{if(e.target.id==='lightbox')closeLightbox()});
     function attachLightboxClicks(){
       ['dogmotion','rbc','spiral','anatomy','mandible'].forEach(id=>{
@@ -407,7 +411,6 @@
       });
     }
 
-    // Scroll animations
     const obs=new IntersectionObserver(e=>{e.forEach(en=>{if(en.isIntersecting)en.target.classList.add('visible')})},{threshold:.1});
     document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));
     document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{e.preventDefault();document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'})})});
